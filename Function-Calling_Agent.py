@@ -1,11 +1,10 @@
 import requests
 import sqlite3
+import os
 import json
 import datetime
 
 # ============ ① 配置 ============
-import os
-
 API_KEY = os.environ.get("ZHIPU_API_KEY")
 if not API_KEY:
     raise ValueError("❌ 请设置环境变量 ZHIPU_API_KEY")
